@@ -20,24 +20,38 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
+    
+    // Create email body with form data
+    const subject = "お問い合わせ - RAKEY FIELD"
+    const body = `
+お名前: ${formData.name}
+メールアドレス: ${formData.email}
+電話番号: ${formData.phone}
+お問い合わせ内容:
+${formData.message}
+    `.trim()
+    
+    // Create mailto URL
+    const mailtoUrl = `mailto:haegiwa.com@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    
+    // Open email client
+    window.location.href = mailtoUrl
   }
 
   return (
-    <section className="py-24 bg-muted" id="contact">
+    <section className="py-24 bg-white" id="contact">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-serif">お問い合わせ</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-serif text-primary">お問い合わせ</h2>
+            <p className="text-lg leading-relaxed text-primary">
               ご質問やご相談など、お気軽にお問い合わせください。
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Form */}
-            <Card className="border-2">
+            <Card className="border-2 shadow-lg">
               <CardHeader>
                 <CardTitle className="text-2xl text-foreground">お問い合わせフォーム</CardTitle>
                 <CardDescription>以下のフォームにご記入の上、送信してください。</CardDescription>
@@ -86,7 +100,7 @@ export function Contact() {
                       rows={5}
                     />
                   </div>
-                  <Button type="submit" className="w-full bg-primary hover:bg-primary/90" size="lg">
+                  <Button type="submit" className="w-full bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white transition-colors duration-300 shadow-md" size="lg">
                     <Send className="mr-2 h-5 w-5" />
                     送信する
                   </Button>
@@ -96,7 +110,7 @@ export function Contact() {
 
             {/* Contact Info */}
             <div className="space-y-6">
-              <Card className="border-2 bg-primary text-white">
+              <Card className="border-2 bg-primary text-white shadow-lg">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
                     <Phone className="h-6 w-6" />
@@ -119,7 +133,7 @@ export function Contact() {
                 </CardContent>
               </Card>
 
-              <Card className="border-2 bg-primary text-white">
+              <Card className="border-2 bg-primary text-white shadow-lg">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
                     <Mail className="h-6 w-6" />
@@ -134,7 +148,7 @@ export function Contact() {
                 </CardContent>
               </Card>
 
-              <Card className="border-2">
+              <Card className="border-2 shadow-lg">
                 <CardContent className="pt-6">
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     ※ お問い合わせいただいた内容は、営業時間内に順次対応させていただきます。

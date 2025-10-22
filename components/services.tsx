@@ -31,20 +31,20 @@ const services = [
 
 export function Services() {
   return (
-    <section className="py-24 bg-muted" id="services">
+    <section className="py-24 bg-white" id="services">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-serif">サービス一覧</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-serif text-primary">サービス一覧</h2>
+          <p className="text-lg leading-relaxed text-primary">
             お客様のカーライフを総合的にサポートする、多彩なサービスをご提供しています。
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className="border-2 hover:border-primary transition-colors duration-300 hover:shadow-lg">
+            <Card key={index} className="border-2 shadow-lg hover:border-primary hover:shadow-xl transition-all duration-300">
               <CardHeader>
-                <div className="w-14 h-14 bg-primary rounded-lg flex items-center justify-center mb-4">
+                <div className="w-14 h-14 bg-primary rounded-lg flex items-center justify-center mb-4 shadow-md">
                   <service.icon className="h-7 w-7 text-white" />
                 </div>
                 <CardTitle className="text-xl text-foreground">{service.title}</CardTitle>
@@ -57,8 +57,8 @@ export function Services() {
         </div>
 
         {/* Qualifications */}
-        <div className="mt-16 max-w-4xl mx-auto">
-          <Card className="bg-primary text-white border-0">
+        <div className="mt-16 max-w-7xl mx-auto">
+          <Card className="bg-primary text-white border-0 shadow-xl">
             <CardHeader>
               <CardTitle className="text-2xl text-center text-white">保有資格</CardTitle>
             </CardHeader>
