@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="bg-primary text-white py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {/* Company Info */}
             <div>
               <h3 className="text-2xl font-bold mb-4">RAKEY FIELD</h3>
@@ -40,6 +40,33 @@ export function Footer() {
                     <p>10:00 〜 18:00</p>
                     <p className="text-white/70">定休日: 不定休</p>
                   </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Navigation */}
+            <div>
+              <h4 className="font-semibold mb-4 text-lg">ページ</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a href="/" className="hover:underline text-white/80 hover:text-white transition-colors">
+                    ホーム
+                  </a>
+                </li>
+                <li>
+                  <a href="/gallery" className="hover:underline text-white/80 hover:text-white transition-colors">
+                    ギャラリー
+                  </a>
+                </li>
+                <li>
+                  <a href="/#services" className="hover:underline text-white/80 hover:text-white transition-colors">
+                    サービス一覧
+                  </a>
+                </li>
+                <li>
+                  <a href="/#contact" className="hover:underline text-white/80 hover:text-white transition-colors">
+                    お問い合わせ
+                  </a>
                 </li>
               </ul>
             </div>
