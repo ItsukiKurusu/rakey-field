@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { Card } from "@/components/ui/card"
 
 const galleryImages = [
   "BE8A31D1-7ED7-4040-8FB1-E4F0A9B7E930.jpg",
@@ -14,12 +13,6 @@ const galleryImages = [
   "S__8364107_0.jpg",
   "F136EF56-3656-4392-A3E2-35210D37FAF8.jpg",
 ]
-
-// ランダムな高さを生成する関数
-const getRandomHeight = () => {
-  const heights = [200, 250, 300, 350, 400, 450]
-  return heights[Math.floor(Math.random() * heights.length)]
-}
 
 // 画像をランダムにシャッフルする関数
 const shuffleArray = (array: string[]) => {
@@ -50,28 +43,24 @@ export default function GalleryPage() {
 
       {/* Gallery Grid */}
       <div className="container mx-auto px-4 py-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-1 space-y-1">
-            {shuffledImages.map((image, index) => {
-              const randomHeight = getRandomHeight()
-              return (
-                <Card 
-                  key={`${image}-${index}`} 
-                  className="break-inside-avoid mb-1 overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
-                >
-                  <div className="relative">
-                    <Image
-                      src={`/${image}`}
-                      alt={`ギャラリー画像 ${index + 1}`}
-                      width={400}
-                      height={randomHeight}
-                      className="w-full object-cover"
-                      style={{ height: `${randomHeight}px` }}
-                    />
-                  </div>
-                </Card>
-              )
-            })}
+        <div className="max-w-5xl mx-auto">
+          {/* 写真のオリジナル比率を保持したレイアウト */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1">
+            {shuffledImages.map((image, index) => (
+              <div 
+                key={`${image}-${index}`} 
+                className="overflow-hidden border border-gray-300 bg-gray-50"
+              >
+                <Image
+                  src={`/${image}`}
+                  alt={`ギャラリー画像 ${index + 1}`}
+                  width={500}
+                  height={400}
+                  className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                  style={{ aspectRatio: 'auto' }}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
