@@ -36,15 +36,16 @@ export function Hero() {
             お客様のカーライフを総合的にサポートする、信頼のプロフェッショナル集団です。
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90">
-              サービス一覧
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+          <div className="flex justify-center">
             <Button
               size="lg"
               variant="outline"
               className="text-lg px-8 py-6 border-white text-white hover:bg-white/10 bg-transparent"
+              onClick={() => {
+                document.getElementById('contact')?.scrollIntoView({ 
+                  behavior: 'smooth' 
+                })
+              }}
             >
               お問い合わせ
             </Button>
