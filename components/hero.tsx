@@ -20,20 +20,20 @@ export function Hero() {
         <div className="max-w-5xl mx-auto text-center">
           {/* Logo */}
           <div className="mb-8">
-            <h1 className="text-7xl md:text-9xl font-bold text-white tracking-wider mb-4">RAKEY FIELD</h1>
-            <div className="flex items-center justify-center gap-4 flex-wrap text-white text-sm md:text-base font-semibold">
+            <h1 className="text-7xl md:text-9xl font-bold text-white tracking-wider mb-4 title-border border-dark px-2 py-1 d-inline-block rounded-md">RAKEY FIELD</h1>
+            {/* <div className="flex items-center justify-center gap-4 flex-wrap text-white text-sm md:text-base font-semibold">
               <span className="bg-accent px-4 py-2 rounded">SALES</span>
               <span className="bg-accent px-4 py-2 rounded">SERVICE</span>
               <span className="text-2xl">GENUINE QUALITY</span>
               <span className="bg-accent px-4 py-2 rounded">REBUILD</span>
               <span className="bg-accent px-4 py-2 rounded">REPAIR</span>
-            </div>
+            </div> */}
           </div>
 
-          <p className="text-2xl md:text-3xl text-white font-serif mb-12 text-balance">PROFESSIONAL SERVICE SUPPLY</p>
+          <p className="text-2xl md:text-3xl text-white font-serif mb-12 text-balance bg-accent rounded">PROFESSIONAL SERVICE SUPPLY</p>
 
-          <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed max-w-3xl mx-auto">
-            自動車買取・販売からレンタカー、アンティーク雑貨まで。
+          <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed max-w-4xl mx-auto">
+            自動車買取・販売から整備、板金、レンタカー、自動車保険、アンティーク雑貨まで。
             <br />
             お客様のカーライフを総合的にサポートする、信頼のプロフェッショナル集団です。
           </p>
