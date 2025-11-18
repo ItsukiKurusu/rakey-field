@@ -12,9 +12,9 @@ const galleryImages = [
   { src: "B0B2DA52-C8C0-49BF-8974-B711658C3D78.jpg", caption: "ショールーム②" },
   { src: "47F28ABE-AB8F-4C75-A170-61B41756CC90.jpg", caption: "ショールーム③" },
   { src: "S__8364103_0.jpg", caption: "事務所内観" },
-  { src: "S__8364106_0.jpg", caption: "お客様の納車準備" },
-  { src: "S__8364107_0.jpg", caption: "イベント展示の様子" },
-  { src: "F136EF56-3656-4392-A3E2-35210D37FAF8.jpg", caption: "RAKEY FIELD 外観" },
+  { src: "S__8364106_0.jpg", caption: "事務所①" },
+  { src: "S__8364107_0.jpg", caption: "事務所②" },
+  { src: "F136EF56-3656-4392-A3E2-35210D37FAF8.jpg", caption: "倉庫外観" },
 ]
 
 export default function GalleryPage() {
