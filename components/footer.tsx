@@ -11,9 +11,10 @@ export function Footer() {
               <h3 className="text-2xl font-bold mb-4">RAKEY FIELD</h3>
               <p className="text-white/80 text-sm leading-relaxed mb-4">PROFESSIONAL SERVICE SUPPLY</p>
               <div className="flex gap-2 flex-wrap text-xs">
-                <span className="bg-accent px-3 py-1 rounded">SALES</span>
-                <span className="bg-accent px-3 py-1 rounded">SERVICE</span>
-                <span className="bg-accent px-3 py-1 rounded">QUALITY</span>
+                 <span className="bg-accent px-3 py-1 rounded">SALES</span>
+                 <span className="bg-accent px-3 py-1 rounded">SERVICE</span>
+                 <span className="bg-accent px-3 py-1 rounded">REBUILD</span>
+                 <span className="bg-accent px-3 py-1 rounded">REPAIR</span>
               </div>
             </div>
 
