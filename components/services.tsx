@@ -9,8 +9,8 @@ const services = [
   },
   {
     icon: Wrench,
-    title: "レンタカー 板金/修理",
-    description: "レンタカーサービスと、熟練の技術による板金・修理サービスを提供。お車の状態を最高に保ちます。",
+      title: "レンタカー",
+      description: "多様な車種と柔軟なプランで、快適なレンタカーサービスをご提供します。",
   },
   {
     icon: Package,
@@ -19,8 +19,8 @@ const services = [
   },
   {
     icon: FileCheck,
-    title: "車検/洗車",
-    description: "確実な車検サービスと、プロフェッショナルな洗車で、お車を常にベストコンディションに。",
+      title: "メンテナンス/車検/板金",
+      description: "車検、メンテナンス、板金修理まで、安心と信頼の技術でお車をサポートします。",
   },
   {
     icon: Shield,
