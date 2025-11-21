@@ -50,11 +50,8 @@ export default function GalleryPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-primary text-white py-20 text-center">
+        <div className="bg-primary text-white py-20 text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">ギャラリー</h1>
-        <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-          RAKEY FIELDの作業風景や取り扱い車両をご覧ください。
-        </p>
       </div>
 
       {/* Gallery Grid */}
