@@ -30,7 +30,7 @@ export function Hero() {
             </div> */}
           </div>
 
-          <p className="text-2xl md:text-3xl text-white font-serif mb-12 text-balance bg-accent rounded">PROFESSIONAL SERVICE SUPPLY</p>
+          <p className="text-2xl md:text-3xl text-white font-serif mb-12 text-balance bg-accent rounded">Vintage, Classic, Comfortable.</p>
 
           <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed max-w-4xl mx-auto">
             自動車買取・販売から整備、板金、レンタカー、自動車保険、アンティーク雑貨まで。
